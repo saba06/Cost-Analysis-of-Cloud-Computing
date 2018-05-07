@@ -1,0 +1,35 @@
+ssd:
+1*32=1*32
+2*80=2*80
+2*320=600+40
+1*60=1*60
+1*320=300+20
+8*800=8*800
+24*2000 hdd=
+
+server memory :
+160=3*32+(2*32)
+7.5=8
+30=3*8+(3*2)
+60=3*16+(3*4)
+15=3*4+(2+1)
+122=3*32+(3*8+(2))
+244=3*32+(2*32)+(2*32)
+244
+
+Processors:
+take pricing per core!!!
+number of flops/s=number of cores*operating fequency*instructions per cycle
+sandy bridge/iv bridge -8
+haswell-16
+
+
+cost of power=hardware-power+cooling-power+netwrok-power
+
+total cost=cost of instance(hardware)+basic hardware cost(server racks,switch-ports)+cost of power(1.5*cost of running the machine---0.5 for cooling+powere for network switch)+admin cast+housing cost.
+
+There seems to be a mis-understanding on the plots. It says for plot #1, that you need to show the cost in dollars per flop per hour. What I meant to say was $/hour per flop/sec. Costs on the cloud are done in $/hour, and flops are typically measured in flop/sec. All references to flops in the writeup is referring to flop/sec. And all costs are referring to cost per hour.
+ 
+For example, say we have an instance that gets 10GFlop/sec and costs $0.10 per hour. That means that the $/hour/flop is $0.10/10GFlops = $10/1TFlop (or $0.10/10000000 per flops). In order to have reasonable $ figures in the plots, perhaps we should focus on the $/hour per TFlop/sec. 
+ 
+Ioan
